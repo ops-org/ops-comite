@@ -18,12 +18,12 @@ Processo de contribuição
 
 Para contribuir com um projeto deve-se seguir os seguintes passos:
 
-# Fazer um clone do projeto;
-# Criar uma nova branch, com prefixo `feature/` e algo que sugira a proposta da contribuição;
-# Quando finalizada a implementação, deverá ser feito um Pull Request para a branch `master` e adicionar uma tag `Revisão`;
-# No mínimo 2 outros membros do time no projeto deverão revisar o código, comentários e funcionamento do recursos, isso poderá levar ao processo de revisão, caso aceito, ambos membros devem adicionar +1 como comentário do Pull Request;
-# O ultimo engenheiro a revisar deverá adicionar a tag `Aceito` para o Pull Request e em seguida aplicar o Merge utilizando o botão na interface do Github;
-# A branch com a `feature` deve ser apagada, pois a mesma já está presente no branch `master`;
+1. Fazer um clone do projeto;
+2. Criar uma nova branch, com prefixo `feature/` e algo que sugira a proposta da contribuição;
+3. Quando finalizada a implementação, deverá ser feito um Pull Request para a branch `master` e adicionar uma tag `Revisão`;
+4. No mínimo 2 outros membros do time no projeto deverão revisar o código, comentários e funcionamento do recursos, isso poderá levar ao processo de revisão, caso aceito, ambos membros devem adicionar +1 como comentário do Pull Request;
+5. O ultimo engenheiro a revisar deverá adicionar a tag `Aceito` para o Pull Request e em seguida aplicar o Merge utilizando o botão na interface do Github;
+6. A branch com a `feature` deve ser apagada, pois a mesma já está presente no branch `master`;
 
 **Atenção**: Nunca faça Merge para o branch `master` manualmente, ou faça commits diretamente no branch `master`, respeite o processo e a comunidade.
 
