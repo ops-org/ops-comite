@@ -52,7 +52,7 @@ No texto deve incluir uma boa descrição da tarefa que foi executada no Pull Re
 
 Você pode incluir alguns nomes de outros membros, para que eles recebam um alerta do seu Pull Request e revisem o quanto antes, mas lembre-se de ser respeitoso aos outros membros, para não virar SPAM ao cita-los demais.
 
-Assine a você o PR, caso outro desenvolvedor queira ajduar e vocês estejam de acordo, assine a ele, pois é importante para comunidade saber com quem é a responsabilidade do PR, independente de quem tenha feito os commits contidos nele. Um desenvolvedor pode implementar, mas não ter tempo de arrumar após a revisão, isso permitirá ele delegar isso a outro desenvolvedor com tempo disponível e não parar a evolução dos projetos.
+Assine a você o PR, caso outro desenvolvedor queira ajudar e vocês estejam de acordo, assine a ele, pois é importante para comunidade saber com quem é a responsabilidade do PR, independente de quem tenha feito os commits contidos nele. Um desenvolvedor pode implementar, mas não ter tempo de arrumar após a revisão, isso permitirá ele delegar isso a outro desenvolvedor com tempo disponível e não parar a evolução dos projetos.
 
 Se houverem Milestones para a sua implementação, não esqueça de adiciona-la no seu PR.
 
