@@ -6,7 +6,7 @@ Qualquer pessoa pode contribuir com os projetos da OPS, todos eles são público
 Equipe da Organização
 ---------------------
 
-A equipe da Organização OPS-ORG no Github é composta por voluntários que foram selecionados pelo Lúcio Big, a forma que estes egenheiros interessados em ajudar e manter os projetos são selecionados ainda será definida no futuro, mas hoje toda contribuição para o projeto deverá passar por pelo menos 2 dos integrantes da organização para que possa ser aceito. Este processo de revisão será descrito neste documento.
+A equipe da Organização OPS-ORG no Github é composta por voluntários que foram selecionados pelo Lúcio Big, a forma que estes Engenheiros interessados em ajudar e manter os projetos são selecionados ainda será definida no futuro, mas hoje toda contribuição para o projeto deverá passar por pelo menos 2 dos integrantes da organização para que possa ser aceito. Este processo de revisão será descrito neste documento.
 
 Criação de projetos
 -------------------
