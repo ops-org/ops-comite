@@ -17,7 +17,7 @@ Tendo estes dados bem definidos o projeto poderá ser criado na organização e 
 Modularidade
 ------------
 
-Os projetos da OPS, por serem open-srouce e envolver equipes remotas de pessoas que não compartilham ambiente físico e tem como meio de comunicação sistemas que podem atrasar durante dias respostas e atrapalhar na integração de sistemas, precisam ter os projetos bem modulares para que esse atrito seja reduzido o máximo possível permitindo que os projetos evoluam sem envolver uma grande manutenção em seus similares.
+Os projetos da OPS, por serem open-source e envolver equipes remotas de pessoas que não compartilham ambiente físico e tem como meio de comunicação sistemas que podem atrasar durante dias respostas e atrapalhar na integração de sistemas, precisam ter os projetos bem modulares para que esse atrito seja reduzido o máximo possível permitindo que os projetos evoluam sem envolver uma grande manutenção em seus similares.
 
 Para isso, a divisão em camadas de projeto é uma maneira muito eficaz, tendo um ponto de integração que deverá comunicar com os demais projetos por meio de API via protocolo HTTP ou hibridos de HTTP dentro de túnel SSH, para operações que necessitem maior segurança.
 
@@ -30,14 +30,14 @@ A estrutura geral seriá:
 Backend
 -------
 
-Este deve ser composto de apenas *um* projeto, qual deve conter acesso a base de dados e demais dispositivos de backend que deverão ser registrados no mesmo, seus protocolos de comunicação, atuenticação, etc deverão ser discutidos no prójeto de Backend, assim como a linguagem utilizada para sua implementação.
+Este deve ser composto de apenas *um* projeto, qual deve conter acesso a base de dados e demais dispositivos de backend que deverão ser registrados no mesmo, seus protocolos de comunicação, atuenticação, etc deverão ser discutidos no projeto de Backend, assim como a linguagem utilizada para sua implementação.
 
 Dispositivos de Backend
 -----------------------
 
 Podem ser vários projetos, isso visa ramificar e agilizar a produção, pois sites do governo não seguem padrões de desenvolvimento, então onde uma solução pode funcionar muito bem utilizando PHP para fazer o scraping dos dados, em outra pode necessitar de recursos avançados como Phantomjs ou outros, para resolver as necessidades e acessar os dados desejados. Assim como projetos que podem inclusive montar emails atraves de templates para solicitação de dados de parlamentares.
 
-Contudo todos estes diferentes projetos devem se comunicar de maneira padronizada com o Backend, podendo ser ncessário não apenas requisições mas também gatilhos que avisem o Backend a situaçnao da tarefa que este desempenha.
+Contudo todos estes diferentes projetos devem se comunicar de maneira padronizada com o Backend, podendo ser necessário não apenas requisições mas também gatilhos que avisem o Backend a situação da tarefa que este desempenha.
 
 Um exemplo de gatilho é caso um site para acessar determinada página tem um captcha, onde o dispositivo pode enviar ao backend para que seja exibido ao usuário que solicitou os dados preencher e permitir que o scraper finalize sua operação de aquisição de dados.
 
