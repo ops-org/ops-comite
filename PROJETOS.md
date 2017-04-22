@@ -21,7 +21,7 @@ Os projetos da OPS, por serem open-source e envolver equipes remotas de pessoas 
 
 Para isso, a divisão em camadas de projeto é uma maneira muito eficaz, tendo um ponto de integração que deverá comunicar com os demais projetos por meio de API via protocolo HTTP ou hibridos de HTTP dentro de túnel SSH, para operações que necessitem maior segurança.
 
-A estrutura geral seriá:
+A estrutura geral será:
 
 * **Dispositivos de backend**: São projetos que são acessados por ativação ou agendamento, que devem realizar a aquisição e atualização de dados utilizados pela OPS.
 * **Backend**: Deverá ter acesso ao banco de dados da OPS, se encarregando de armazenar dados proveniente de dispositivos e prover dados aos Frontend.
@@ -30,7 +30,7 @@ A estrutura geral seriá:
 Backend
 -------
 
-Este deve ser composto de apenas *um* projeto, qual deve conter acesso a base de dados e demais dispositivos de backend que deverão ser registrados no mesmo, seus protocolos de comunicação, atuenticação, etc deverão ser discutidos no projeto de Backend, assim como a linguagem utilizada para sua implementação.
+Este deve ser composto de apenas *um* projeto, o qual deve conter acesso a base de dados e demais dispositivos de backend que deverão ser registrados no mesmo, seus protocolos de comunicação, autenticação, etc deverão ser discutidos no projeto de Backend, assim como a linguagem utilizada para sua implementação.
 
 Dispositivos de Backend
 -----------------------
@@ -39,13 +39,15 @@ Podem ser vários projetos, isso visa ramificar e agilizar a produção, pois si
 
 Contudo todos estes diferentes projetos devem se comunicar de maneira padronizada com o Backend, podendo ser necessário não apenas requisições mas também gatilhos que avisem o Backend a situação da tarefa que este desempenha.
 
-Um exemplo de gatilho é caso um site para acessar determinada página tem um captcha, onde o dispositivo pode enviar ao backend para que seja exibido ao usuário que solicitou os dados preencher e permitir que o scraper finalize sua operação de aquisição de dados.
+Um exemplo de gatilho é caso o site tenha um captcha para acessar determinada página. O dispositivo pode enviar o captcha ao backend para que seja exibido ao usuário que solicitou os dados. Após preenchimento permitir que o scraper finalize sua operação de aquisição de dados.
 
 Frontend
 --------
 
 São considerados frontend todos projetos que vão permitir a pessoas utilizarem dispositivos como computadores, smartphones, tablets, etc, para consumir dados do Backend e iniciar operações de aquisição de novos dados, ou registrar informações manuais no Backend.
 
-As implementações de Frontend não devem depender do Backend para serem entregues, mas sim para comunicar com o mesmo, por exemplo, o Backend não deve necessáriamente renderizar nenhum HTML, mas sim entregar dados sempre em formatos comuns a todos dispositivos tais como JSON, XML ou YML, traduzidos estes dados o Frontend deverá aplicar essas informações a fragmentos e renderiza-los em um dispositivo, eliminando totalmente a dependencia do Backend para existir, mas apenas necessitando do mesmo para prover seus dados.
+As implementações de Frontend não devem depender do Backend para serem entregues, mas sim para comunicar com o mesmo. 
+
+Por exemplo, o Backend não deve necessariamente renderizar nenhum HTML, mas sim entregar dados sempre em formatos comuns a todos os dispositivos como JSON, XML ou YML. Após traduzidos esses dados, o Frontend deverá aplicar essas informações em fragmentos e renderiza-los em um dispositivo. Eliminando assim totalmente a dependência do Backend para existir, apenas necessitando-o para prover seus dados.
 
 Observação sobre **SEO**: Apesar dos spiders hoje em dia lerem sites dinâmicamente gerados por JavaScript, existem limitações quanto as partes que dependem de requisições XHR e via WebSocket, para resolver isso pode ser uma boa solução o uso de entrega de páginas pré renderizadas quando o agente da requisição se identificar como tal.
