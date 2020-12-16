@@ -27,7 +27,7 @@ Para contribuir com um projeto deve-se seguir os seguintes passos:
 
 **Atenção**: Nunca faça Merge para o branch `master` manualmente, ou faça commits diretamente no branch `master`, respeite o processo e a comunidade.
 
-Merge manual, como faze-lo
+Merge manual, como fazê-lo
 --------------------------
 
 Se a proposta demorar muito, pode ser necessário fazer um merge manual, para isso, a pessoa tem que atualizar seu repositório `master` e depois fazer merge com sua branch, resolver os conflitos e enviar isso no processo de revisão antes de juntar ao `master`
