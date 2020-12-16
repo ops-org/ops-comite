@@ -11,7 +11,7 @@ A equipe da Organização OPS-ORG no Github é composta por voluntários que for
 Criação de projetos
 -------------------
 
-A comunidade de engneheiros da OPS deverá discutir e validar a criação dos projetos antes deles serem criados no repositório, é de conhecimento que muitos dos membros tem acesso total a organização podendo assim criar os projetos, mas para fins de manter organizado deveremos conversar entre todos e definir como este projeto irá funcionar, feito isto, uma proposta, que seguirá os procedimentos também descritos aqui, deverá ser apresentada em forma de Pull Request para o repositório do comitê e ao ser aprovada, o projeto será criado e iniciado conforme definido no documento.
+A comunidade de engenheiros da OPS deverá discutir e validar a criação dos projetos antes deles serem criados no repositório, é de conhecimento que muitos dos membros tem acesso total a organização podendo assim criar os projetos, mas para fins de manter organizado deveremos conversar entre todos e definir como este projeto irá funcionar, feito isto, uma proposta, que seguirá os procedimentos também descritos aqui, deverá ser apresentada em forma de Pull Request para o repositório do comitê e ao ser aprovada, o projeto será criado e iniciado conforme definido no documento.
 
 Processo de contribuição
 ------------------------
@@ -43,7 +43,7 @@ Não se deve fazer merge em códigos antes das revisões serem completadas e rec
 
 Em casos de "disputa" onde o autor do código, defende sua implementação ao responder o comentário dizendo que a alteração poderia acarretar consequencias, isso deve ser resolvida de forma didatica pelos envolvidos, tentando achar a melhor solução e estes podem chamar outros engenheiros da comunidade para opinar e ajudar. Contudo o merge só deve ser realizado com a disputa resolvida, onde a maioria esteja de acordo com a solução adotada.
 
-O procsso de revisão irá durar o tempo que for necessário, não pulem o processo, se precisar esperar um dia ou mais para que outro engenheiro revise o código, mas você deseja dar continuidade programando outra `feature`, faça um `fork` da branch atual e começe seu trabalho, mas aguarde que as dependências sejam anexadas a `master` antes de abrir um novo Pull Request, pois este irá incluir as diferenças que já estão no outro, ou se quiser abrir antes e aguardar, informe no texto do Pull Request que eles depende do outro e identifique a dependencia.
+O processo de revisão irá durar o tempo que for necessário, não pulem o processo, se precisar esperar um dia ou mais para que outro engenheiro revise o código, mas você deseja dar continuidade programando outra `feature`, faça um `fork` da branch atual e começe seu trabalho, mas aguarde que as dependências sejam anexadas a `master` antes de abrir um novo Pull Request, pois este irá incluir as diferenças que já estão no outro, ou se quiser abrir antes e aguardar, informe no texto do Pull Request que ele depende do outro e identifique a dependencia.
 
 Abrindo Pull Request
 --------------------
@@ -61,7 +61,7 @@ Organização de commits
 
 Lembre-se de commitar sempre que terminar um trecho de funcional de código. Isso é, mantenha os commits pequenos, quanto menos arquivos e modificações em um commit, mais fácil é dar a manutenção no sistema, caso seja preciso fazer um revert ou bisect para corrigir uma falha.
 
-Commits com muitas alterações devem ser chamadas atenção na revisão e os revisores deverão ajudar a instruir o desenvolvedor como ele poderia proceder de maneira melhor na proxima vez. Se o mesmo se dispor a arrumar seu processo, será muito bacana, mas dada complexibilidade do procedimento de alteração de commits, tende-se que se a tarefa está funcionando, ser aceita da maneira que estiver.
+Commits com muitas alterações devem ser chamadas atenção na revisão e os revisores deverão ajudar a instruir o desenvolvedor como ele poderia proceder de maneira melhor na proxima vez. Se o mesmo se dispor a arrumar seu processo, será muito bacana, mas dada complexibilidade do procedimento de alteração de commits, tende-se que se a tarefa está funcionando, ela será aceita da maneira que estiver.
 
 Publicação das modificações
 ---------------------------
